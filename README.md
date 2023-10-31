@@ -6,7 +6,7 @@ Resim dosyalarını yeniden boyutlandırabilir, kalitesini ayarlayabilir ve prof
 
 ```php
 <?php
-require_once __DIR__ . '/Image.php';
+require_once 'Image.php';
 
 // Yeniden boyutlandır
 (new Image('images/sample.jpg'))

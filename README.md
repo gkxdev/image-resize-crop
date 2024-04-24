@@ -1,6 +1,6 @@
 # Image Resize Crop
 
-Resim dosyalarını yeniden boyutlandırabilir, kalitesini ayarlayabilir ve profil fotoğraflarında olduğu gibi ortalı bir şekilde kırpma işlemi uygulayabilirsiniz. Uygulanan bu işlemleri, farklı bir isim ve resim uzantısı ile diske yazabilir veya tarayıcıda dinamik olarak çıktı verebilirsiniz. PHP GD extension ile çalışır.
+Resim dosyalarını manipüle etmeye yarayan PHP GD kütüphanesi.
 
 ## Kullanımı
 

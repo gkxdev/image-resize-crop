@@ -10,7 +10,7 @@ class Image {
 
     public function __construct($file) {
         if (!extension_loaded('gd')) {
-            exit('Error: PHP GD is not installed!');
+            exit('PHP GD is not installed!');
         }
 
         if (!is_file($file)) {
@@ -47,7 +47,7 @@ class Image {
     }
 
     public function resize($width, $height, bool $crop = false) {
-        if ($width <= 0) $width = $this->width;
+        if ($width <= 0)  $width = $this->width;
         if ($height <= 0) $height = $this->height;
 
         $x = $y = 0;
@@ -78,7 +78,7 @@ class Image {
 
         }
 
-        return $this->imageRender($width, $height, $x, $y);
+        return $this->renderImage($width, $height, $x, $y);
     }
 
     public function save($file, int $quality = 90) {
@@ -114,7 +114,7 @@ class Image {
         unset($this->image);
     }
 
-    private function imageRender($width, $height, $x = 0, $y = 0) {
+    private function renderImage($width, $height, $x = 0, $y = 0) {
         $image = $this->image;
         $this->image = imagecreatetruecolor($width, $height);
 

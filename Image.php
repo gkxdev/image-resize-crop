@@ -3,7 +3,6 @@
  * Image
  * @author Gökhan Kaya <gkxdev@gmail.com>
  */
-
 class Image {
     private $image;
     private $width, $height, $type;
